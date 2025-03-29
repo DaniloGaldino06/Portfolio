@@ -1,0 +1,466 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/*Seção "Sobre mim"*/
+.container {
+    background-image: url("./images/fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    gap: 0;
+}
+
+.menu {
+    background-color: rgb(40, 37, 42);
+    background-size: 100% 100%;
+    width: 99vw;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: right;
+    z-index: 1000;
+    border-radius: 0 0 20px 20px;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    margin: 0px;
+    padding: 10px;
+    width: auto;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+/*Configuração do menu*/
+.menu ul li {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    position: relative;
+    color: white;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.menu ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #DBBE07;
+    transition: width 0.5s ease;
+}
+
+.menu ul li a:hover::after {
+    text-decoration: underline;
+    width: 100%;
+    color:#DBBE07;
+}
+
+.container > corpo-home {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+
+}
+
+.principal {
+    grid-row: 2/3;
+    margin-top: 20%;
+}
+
+.principal h1, span, h5, p, h2 {
+    text-align: center;
+}    
+.principal h1 {
+    font-size: 80px;
+    margin: 0;
+}
+
+.principal h2 {
+    font-size: 20px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.principal span {
+    font-size: 80px;
+    font-weight: bold;
+    color: #DBBE07;
+    text-align: center;
+}
+
+.social-media {
+    grid-row: 2/3;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 200px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    margin-left: 43%;
+    margin-right: 0;
+    background-color: rgba(40, 37, 42, 0.603);
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #DBBE07;
+    box-shadow: 0 0 10px #DBBE07;
+}
+    
+.social-media img{
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+
+/*Seção "Formação Acadêmica"*/
+
+.curriculo {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px 10px;
+    padding-top: 70px;
+}
+
+.títulos {
+    grid-area: 1/1/2/3;
+    height: 48vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-align: center;
+    
+}
+
+.academia {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.formação1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #DBBE07;
+    text-shadow: #DBBE07 1px 1px 1px;
+}   
+
+
+
+div > table {
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4), -2px -2px 5px rgba(255, 255, 255, 0.5);
+    border-collapse: collapse;
+    display: inline-block;
+    position: relative;
+    padding: 8px;
+    width: 60%;
+    height: 35vh;
+    text-align: left;
+    font-size: 20px;
+    vertical-align: middle;
+
+}
+
+div > table td {
+    padding: 2px;
+}
+
+div > table td.data {
+    text-align: center;
+}
+
+
+.tabela img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+;
+}
+
+.tabela img:hover {
+    transform: scale(1.5);
+}
+
+
+.experiencia {
+    height: 42vh;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+div > ol {
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    padding: 5px;
+    width: 60%;
+    align-self: center;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4), -2px -2px 5px rgba(255, 255, 255, 0.5);
+    border-collapse: collapse;
+    text-decoration: none;
+
+}
+
+div > ol li {
+    padding: 12px;
+    text-align: center;
+    display: block;
+    position: relative;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10%;
+    text-align: left;
+}
+
+.portfolio {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(30deg, rgb(36, 36, 36), #002449);
+
+}
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px 50px;
+    flex-wrap: wrap;
+    padding: 100px 50px;
+}
+
+.container3 .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 35px, 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+    background: #fff;
+}
+
+.container3 .card:hover {
+    height: 400px;
+}
+
+.container3 .card .caixaImg {
+    position: absolute;
+    width: 300px;
+    height: 220px;
+    border-radius: 12px;
+    top: 20px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.container3 .card .caixaImg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.container3 .card .content {
+    position: absolute;
+    top: 225px;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.container3 .card:hover .content {
+    top: 150px;
+    height: 250px;  
+    transition: .5s;
+}
+
+.container3 .card:hover .caixaImg {
+    top: -100px;
+    scale: .75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container3 .card .content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: var(--cor);
+    
+}
+
+.container3 .card .content p {
+    color: #333;
+}
+
+.container3 .card .content a {
+    display: inline-block;
+    top: 15px;
+    background: var(--cor);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.container3 .card .content a:hover {
+    background: #040305;
+    transition: .5s;
+}
+
+.portfolio h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #DBBE07;
+    text-shadow: #DBBE07 1px 1px 1px;
+}
+
+section {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 45px;
+    background: rgb(40, 37, 42);
+    width: 500px;
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.contato h2 {
+    font-size: 2.5rem;
+    color: #DBBE07;
+    margin: 2rem;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    font-size: 17px;
+    margin-bottom: 4px;
+    color: #DBBE07;
+}
+
+form input {
+    padding: 10px;
+    outline: none;
+    margin-bottom: 15px;
+    font-size: 15px;
+    border: 0;
+    transition: all 0.5s;
+}
+form input:focus {
+    border-radius: 8px;
+}
+
+form textarea {
+    padding: 5px;
+    outline: none;
+    margin-bottom: 30px;
+    font-size: 15px;
+    border: 0;
+    transition: all 0.5s;
+}
+
+form textarea:focus {
+    border-radius: 8px;
+}
+
+form button {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    background: transparent;
+    border: 2px solid #DBBE07;
+    color: #DBBE07;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+form button:hover {
+    background: #fff;
+    color: black;
+    border-radius: 8px;
+}
